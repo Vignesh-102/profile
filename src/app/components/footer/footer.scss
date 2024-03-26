@@ -1,0 +1,17 @@
+.footer-container{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 96%;
+}
+.email{
+    margin-left: auto;
+    font-size: smaller;
+    position: relative;
+    top: 30px;
+    left: 16px
+}
