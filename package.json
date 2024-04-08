@@ -3,7 +3,7 @@
   "homepage": "https://Vignesh-102.github.io/profile",
   "version": "0.1.0",
   "private": true,
-  "main": "./out/index.html",
+  "main": "page.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
