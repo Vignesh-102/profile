@@ -4,8 +4,12 @@
     flex-direction: column;
  }
  .footer{
-    margin-top: auto
+    margin-top: auto;
+    height: 2rem;
  }
  .test{
     color: red;
+ }
+ .body-content{
+   height: 5rem;
  }
