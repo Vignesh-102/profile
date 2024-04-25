@@ -6,7 +6,6 @@
 }
 
 .menu-container {
-    margin: auto;
     width: 50%;
     margin-bottom: 5rem;
 }
@@ -16,11 +15,10 @@ ul {
     display: flex;
     padding: 0;
     margin: 0;
-    flex-direction: row;
 }
 
 li {
-   margin: auto;
+   margin: 0.5rem;
    padding: 0.5rem;
     cursor: pointer;
     font-size: small;
@@ -37,4 +35,13 @@ li {
     width: 80%;
     margin: auto;
     text-align: justify;
+}
+
+@media only screen and (max-width: 600px){
+    ul{
+        flex-direction: column;
+        display: block;
+        height: 100%;
+        width: 200%;
+    }
 }
