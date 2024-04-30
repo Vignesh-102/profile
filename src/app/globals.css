@@ -1,5 +1,4 @@
 .page-container{
-    min-height: 39rem;
     display: flex;
     flex-direction: column;
  }
@@ -9,7 +8,4 @@
  }
  .test{
     color: red;
- }
- .body-content{
-   height: 5rem;
  }
