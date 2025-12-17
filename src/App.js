@@ -31,7 +31,7 @@ function App() {
 
         {/* Main content changes based on route */}
         <div className="content-container">
-          <Routes>
+          <Routes path="/profile">
             <Route path="/" element={<HomeContentDescription />} />
             <Route path="/experience" element={<Experience />}>
               <Route path="TCS" element={<ExperienceTCS />} />
