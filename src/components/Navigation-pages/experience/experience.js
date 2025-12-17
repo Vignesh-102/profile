@@ -8,10 +8,11 @@ export default function Experience() {
             duration: 'April 2023 - Present',
             role: 'Senior Software Engineer',
             descriptions: [
-                'Worked in a Microfrontend Angular applications and implemented the UI as per the Invision Design',
-                'Utilizing the Angular framework and provide an efficient Application as per the requirement and delivering on time to the clients',
-                'Will always make sure the code coverage for the pushed code is always above 80%',
-                'Will push the code without lint errors and will update the application as per SonarQube suggestions to improve efficency of the code as well as to ensure an bug free application'
+                "Led development of major Angular application modules, delivering reusable components, Web Components for Magnolia CMS integration, and scalable front-end architecture.",
+                "Built and enhanced Spring Boot microservices for production use, including REST APIs, service-to-service communication, GraphQL integrations, and database-layer workflows.",
+                "Practiced microservices architecture by implementing modular backend services, API contracts, WebSocket event flows, and end-to-end communication across distributed systems.",
+                "Expanded front-end capabilities by building React components and features using modern React patterns, TypeScript, and practical GraphQL/REST consumption.",
+                "Collaborated with frontend, backend, and CMS teams to deliver end-to-end features, resolve integration challenges, and ensure seamless production deployments."
             ]
         },
         {
@@ -19,36 +20,37 @@ export default function Experience() {
             duration: 'January 2021 - March 2023',
             role: 'Associate System Engineer',
             descriptions: [
-                'Worked in a migration project from legacy Angular JS to latest versions, where the documentation is not available',
-                'Had implemented the UI with the client provided CSS modules and acheived the same look as the running applications',
-                'Implemented complex forms using Angular FormArray and had written helper functions to handle custom validations',
-                'Handled API requests to get the data and mapped the data as user friendly and provided to the compopnent'
-
+                "Developed and maintained core Angular features using component-driven architecture, reusable modules, RxJS streams, and clean TypeScript design patterns.",
+                "Migrated legacy AngularJS screens to modern Angular by rebuilding UI modules from scratch and replicating exact behaviors without existing documentation.",
+                "Implemented complex reactive forms with FormArray, custom validators, and helper utilities to ensure robust form logic and edge-case handling.",
+                "Integrated REST APIs, transformed raw backend responses into user-friendly structures, and optimized data flow through service and interceptor patterns.",
+                "Delivered pixel-perfect UI using precise HTML/CSS/SASS based on client-provided styles, ensuring full visual parity with legacy applications.",
+                "Collaborated with backend, QA, and product teams to refine technical requirements, resolve defects, and enhance UX across new and migrated modules."
             ]
         }
     ]);
     return (
         <div>
             {experience.map((company) => {
-                return(
+                return (
                     <>
-                    <div className={experienceSCSS.header}>
-                        <div className={experienceSCSS.companyName}>{company.companyName}</div>
-                        <div className={experienceSCSS.duration}>{company.duration}</div>
-                    </div>
-                    <div className={experienceSCSS.role}>{company.role}</div>
-                    <ul className={experienceSCSS.description}>
-                        {company.descriptions?.map((describtion) => {
-                            return(
-                                <>
-                                  <li>{describtion}</li>
-                                </>
-                            )
-                        })}
-                    </ul>
-                </>
+                        <div className={experienceSCSS.header}>
+                            <div className={experienceSCSS.companyName}>{company.companyName}</div>
+                            <div className={experienceSCSS.duration}>{company.duration}</div>
+                        </div>
+                        <div className={experienceSCSS.role}>{company.role}</div>
+                        <ul className={experienceSCSS.description}>
+                            {company.descriptions?.map((describtion) => {
+                                return (
+                                    <>
+                                        <li>{describtion}</li>
+                                    </>
+                                )
+                            })}
+                        </ul>
+                    </>
                 )
-                
+
             })}
         </div>
     )

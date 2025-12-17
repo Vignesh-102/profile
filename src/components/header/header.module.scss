@@ -1,17 +1,45 @@
-.headerContainer{
-    background-color: black;
-    color: aliceblue;
-    display: flex;
-    padding: 1.25rem;
+.headerContainer {
+  background-color: #0f0f0f;
+  color: #f5faff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nameContainer{
-    margin-left: auto;
-}
-.name{
-    position: relative;
-    left: 1rem;
-}
-.designation{
-    font-size: small;
 
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4fa8ff;
+}
+
+.designation {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: -4px;
+}
+
+.rightContent {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ffffff;
 }

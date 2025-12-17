@@ -1,26 +1,14 @@
-
-import { NavLink } from 'react-router-dom'
-import navigationSCSS from './navigation.module.css'
-
+import { NavLink } from 'react-router-dom';
+import styles from './navigation.module.css';
 
 export default function Navigation() {
-
-    function navLinkStyles({ isActive }) {
-        if (isActive) {
-            return ({
-                backgroundColor: 'grey',
-                color: '#f3f3f3',
-                boxShadow: '0 0 6px #ff0000'
-            }
-            )
-        }
-    }
-    return (
-        <div className={navigationSCSS.menuContainer}>
-            <NavLink to='/' style={navLinkStyles}>Home</NavLink>
-            <NavLink to='/experience' style={navLinkStyles}>Experience</NavLink>
-            <NavLink to='skills' style={navLinkStyles}>Skills</NavLink>
-            <NavLink to='education' style={navLinkStyles}>Education</NavLink>
-        </div>
-    )
+  return (
+    <nav className={styles.navbar}>
+      <NavLink to="/" className={({ isActive }) => isActive ? styles.active : ''}>Home</NavLink>
+      <NavLink to="/experience" className={({ isActive }) => isActive ? styles.active : ''}>Experience</NavLink>
+      <NavLink to="/skills" className={({ isActive }) => isActive ? styles.active : ''}>Skills</NavLink>
+      <NavLink to="/projects" className={({ isActive }) => isActive ? styles.active : ''}>Personal Projects</NavLink>
+      <NavLink to="/education" className={({ isActive }) => isActive ? styles.active : ''}>Education</NavLink>
+    </nav>
+  );
 }

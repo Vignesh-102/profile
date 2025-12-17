@@ -1,33 +1,31 @@
-@media (max-width: 600px){
-    .menuContainer {
-        flex-direction: column;
-        display: block;
-        height: 100%;
-        width: 200%;
-        margin: auto;
-    }
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: white;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.menuContainer {
-    width: 50%;
-    margin-bottom: 5rem;
-    display: flex;
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+.navbar a:hover {
+  background-color: #333;
+  color: white;
 }
 
-.menuContainer a {
-   margin: 0.5rem;
-   padding: 0.5rem;
-    cursor: pointer;
-    font-size: small;
-    border: 0.1rem solid black;
-    background-color: black;
-    color: white;
-    text-decoration: none;
+.navbar a.active {
+  background-color: #4f46e5;
+  color: white;
+  box-shadow: 0 0 6px #4f46e5;
 }
-
-
