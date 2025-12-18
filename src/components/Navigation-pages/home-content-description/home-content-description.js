@@ -28,7 +28,7 @@ export default function HomeContentDescription() {
       <div className={HeroSCSS.heroButtons}>
         <button className={`${HeroSCSS.heroBtn} ${HeroSCSS.primary}`} onClick={() => navigate("/projects")}>View Projects</button>
         <a
-          href="/resume.pdf"
+          href={`${process.env.PUBLIC_URL}/VIGNESH-resume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           className={`${HeroSCSS.heroBtn} ${HeroSCSS.secondary}`}

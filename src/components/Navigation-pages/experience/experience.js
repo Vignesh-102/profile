@@ -43,7 +43,7 @@ export default function Experience() {
                             {company.descriptions?.map((describtion) => {
                                 return (
                                     <>
-                                        <li>{describtion}</li>
+                                        <li className={experienceSCSS.describtionDetails}>{describtion}</li>
                                     </>
                                 )
                             })}
