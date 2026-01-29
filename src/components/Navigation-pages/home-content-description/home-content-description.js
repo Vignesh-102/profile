@@ -14,7 +14,6 @@ export default function HomeContentDescription() {
             "Full Stack Developer",
             "Angular • React • Spring Boot",
             "MongoDB • PostgreSQL",
-            "kafka • GraphQL • Docker",
           ]}
           typeSpeed={55}
           backSpeed={35}
@@ -22,7 +21,7 @@ export default function HomeContentDescription() {
         />
       </h2>
       <p className={HeroSCSS.heroDescription}>
-        Full Stack Developer with 4.5+ years of experience building scalable, production-grade applications using Angular as the primary front-end framework, complemented by hands-on experience in React and Spring Boot. 
+        Full Stack Developer with 5+ years of experience building scalable, production-grade applications using Angular as the primary front-end framework, complemented by hands-on experience in React and Spring Boot. 
         Adept at developing clean, maintainable code, optimizing performance, and contributing across the full SDLC. Seeking to leverage strong UI engineering expertise and expanding full-stack capabilities to deliver high-quality, enterprise solutions.
       </p>
       <div className={HeroSCSS.heroButtons}>
